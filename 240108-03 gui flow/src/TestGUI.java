@@ -93,7 +93,7 @@ public class TestGUI extends JFrame {
 		Timer timer = new Timer(1000, new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				layout2.next(panel2);
+		//		layout2.next(panel2);
 			}
 		});
 		timer.start();
@@ -130,7 +130,9 @@ public class TestGUI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				if (textField.getText().equals("admin") && passwordField.getText().equals("1234")) {
 					System.out.println("로그인 성공");
-					layout.show(pnlCard, e.getActionCommand());
+					//layout.show(pnlCard, e.getActionCommand());
+					//setVisible(false);
+					new Pizza();
 				} else {
 					System.out.println("로그인 실패");
 				}
